@@ -367,7 +367,7 @@ nav .fa-solid {
   display: none;
 }
 /*------css for small screen-------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #header {
     background-image: url(images1/phonepika_processed.png);
     background-size: contain;
