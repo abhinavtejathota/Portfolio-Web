@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial scale=1.0" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/b387b26b8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images1/Preview-removebg-preview.png"
+            class="logo"
+            alt="pika logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Electric Pokémon</p>
+          <h1>
+            Hi, I'm <span>Pikachu</span> <br />
+            from Kanto
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--------about-------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images1/pikachu.png" alt="pika" />
+          </div>
+          <div class="about-cal-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi there, trainer!<br />
+              I'm Pikachu, your friendly neighborhood electric type. When I'm
+              not busy sparking joy or battling in the Pokémon League, I spend
+              my time working on shocking projects. From zapping bugs to
+              creating electrifying designs, I love bringing energy to
+              everything I do! Whether you're here to challenge me, hire me, or
+              just say “Pika Pika,” you're in for a thunderous good time. Let's
+              create something electrifying together!⚡
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Thunderbolt</span><br />Zap! Lightning-fast code
+                  execution, no bugs allowed!
+                </li>
+                <li>
+                  <span>Quick Attack</span><br />Code in a flash, faster than
+                  you can say 'debug'!
+                </li>
+                <li>
+                  <span>Iron Tail</span><br />Smashing bugs with precision, my
+                  tail never misses!
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-2023</span><br />Started my journey, defeating wild
+                  bugs and zapping through coding challenges!
+                </li>
+                <li>
+                  <span>2023-2024</span><br />
+                  Defeated system vulnerabilities and debugged code faster than
+                  a Quick Attack!
+                </li>
+                <li>
+                  <span>2024-2025</span><br />Mastered hardening systems,
+                  electrifying security patches with Thunderbolt speed!
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021</span><br />Defeated basic bugs in the Kanto and
+                  Johto regions, mastering coding fundamentals!
+                </li>
+                <li>
+                  <span>2023</span><br />Took on advanced algorithms in the
+                  Hoenn and Sinnoh regions, conquering new coding challenges!
+                </li>
+                <li>
+                  <span>2025</span><br />Battling through Unova and Kalos,
+                  fortifying systems and optimizing solutions!
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <h2>Bug Zapping</h2>
+            <p>Defeat pesky bugs and errors in the code lightning-fast.</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-shield-virus"></i>
+            <h2>System Shielding</h2>
+            <p>
+              Fortify systems against cyber threats, using electrifying
+              defenses.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Power Surge Coding</h2>
+            <p>
+              Supercharge your applications, optimizing performance for
+              lightning-fast execution!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------portfolio------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images1/work-1.png" alt="work1" />
+            <div class="layer">
+              <h3>ThunderScan</h3>
+              <p>
+                A lightweight tool that simulates a Pikachu-style scan for
+                vulnerabilities in code or files.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images1/work-2.png" alt="work2" />
+            <div class="layer">
+              <h3>VoltSecure</h3>
+              <p>
+                A simple password strength checker styled with Pikachu's
+                lightning effects for feedback.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images1/work-3.png" alt="work3" />
+            <div class="layer">
+              <h3>ZapSecure</h3>
+              <p>
+                A Pikachu-themed authentication system showcasing secure login
+                flows with electrifying animations for added flair.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!------contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> Satoshi@poke.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +219-604-PIKA(1997)</p>
+            <div class="social-icons">
+              <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://bsky.social"
+                ><i class="fa-brands fa-bluesky"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/abhinav-teja-thota-3b1461296"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images1/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2025 Pikachu Portfolio.
+          <i class="fa-solid fa-diamond"></i> This is a parody and not
+          affiliated with the official Pokémon franchise.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
