@@ -39,6 +39,15 @@ form.addEventListener("submit", (e) => {
 document.querySelectorAll(".work").forEach((work) => {
   const tapMessage = work.querySelector(".tap-message");
   const toggleActive = () => {
+    document.querySelectorAll(".work").forEach((otherWork) => {
+      if (otherWork !== work) {
+        otherWork.classList.remove("active");
+        const otherTapMessage = otherWork.querySelector(".tap-message");
+        if (otherTapMessage) {
+          otherTapMessage.style.opacity = "1";
+        }
+      }
+    });
     work.classList.toggle("active");
     tapMessage.style.opacity = work.classList.contains("active") ? "0" : "1";
   };
