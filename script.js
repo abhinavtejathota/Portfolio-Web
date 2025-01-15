@@ -35,3 +35,23 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+document.querySelectorAll(".work").forEach((work) => {
+  const tapMessage = work.querySelector(".tap-message");
+  const toggleActive = () => {
+    work.classList.toggle("active");
+    tapMessage.style.opacity = work.classList.contains("active") ? "0" : "1";
+  };
+  work.addEventListener("mouseenter", () => {
+    tapMessage.style.opacity = "0";
+  });
+
+  work.addEventListener("mouseleave", () => {
+    if (!work.classList.contains("active")) {
+      tapMessage.style.opacity = "1";
+    }
+  });
+  work.addEventListener("click", () => {
+    toggleActive();
+  });
+});
